@@ -1,7 +1,7 @@
 require 'pry'
 # Pry is included in case you'd like to run this file and test it,
 # but you may remove it if you like.
-# 1,1,2,3,5,8,13,21,34
+# 1,1,2,3,5,8,13,21,34,55,89,144,233,377,610
 
 def fib_range(n)
   array = [0,1]
