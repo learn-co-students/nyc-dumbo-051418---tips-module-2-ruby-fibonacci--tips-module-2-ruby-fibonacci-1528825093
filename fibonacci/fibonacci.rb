@@ -25,13 +25,14 @@ end
 #Second Way
 
 def fibonacci2(n)
-  if x <= 2:
+  if n <= 2:
     return 1
   else
     curr = 1
     prev = 1
     sum = 0
-
+    n = n - 2
+    
     x.times do
       sum = curr + prev
       prev = curr
