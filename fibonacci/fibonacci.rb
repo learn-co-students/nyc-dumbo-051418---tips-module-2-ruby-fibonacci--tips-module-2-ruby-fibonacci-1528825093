@@ -1,9 +1,36 @@
-require 'pry-byebug'
-# Pry is included in case you'd like to run this file and test it,
-# but you may remove it if you like.
+
+# for a series
 
 def fibonacci(n)
-  # your code here :)
+  a = 0
+  b = 1
+
+  n.times do
+      temp = a
+      a = b
+      b = temp + b
+  end
+  return a
 end
 
-Pry.start
+def run(n)
+  n.times do |n|
+    result = fibonacci(n)
+    puts result
+  end
+end
+
+
+fibonacci(5)
+run(5)
+
+
+## Individual numbers
+
+def fib(n)
+  return n if n < 2
+
+  fib(n-1) + fib(n-2)
+end
+
+fib(7)
