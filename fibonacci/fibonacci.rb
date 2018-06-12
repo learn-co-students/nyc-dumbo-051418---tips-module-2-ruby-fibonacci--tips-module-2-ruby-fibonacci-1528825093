@@ -3,7 +3,13 @@ require 'pry-byebug'
 # but you may remove it if you like.
 
 def fibonacci(n)
-  # your code here :)
+  arr = [1,1]
+  i = 2
+  while i < n
+    arr << (arr[i - 1] + arr[i - 2])
+    i += 1
+  end
+  arr.last
 end
 
 Pry.start
