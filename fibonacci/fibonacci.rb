@@ -33,7 +33,7 @@ def fibonacci2(n)
     sum = 0
     n = n - 2
     
-    x.times do
+    n.times do
       sum = curr + prev
       prev = curr
       curr = sum
